@@ -104,7 +104,7 @@
                             android:id="@+id/signup_receiver_img"
                             android:layout_width="50dp"
                             android:layout_height="50dp"
-                            android:src="@drawable/moon">
+                            android:src="@drawable/logo">
 
                         </androidx.appcompat.widget.AppCompatImageView>
 

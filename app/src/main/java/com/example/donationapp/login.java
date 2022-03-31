@@ -21,19 +21,19 @@ import soup.neumorphism.NeumorphCardView;
 public class login extends AppCompatActivity {
 
     TextView signuptext;
-    NeumorphButton loginbtn;
     Dialog dialog;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_login);
 
         //removing titlebar form app
 
-        requestWindowFeature(Window.FEATURE_NO_TITLE);
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        setContentView(R.layout.activity_login);
+//        requestWindowFeature(Window.FEATURE_NO_TITLE);
+//        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+
 
 
         //changing statusbar color
@@ -46,15 +46,14 @@ public class login extends AppCompatActivity {
 
 //        login btn
 
-        loginbtn = findViewById(R.id.login_btn);
-        loginbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-//                Toast.makeText(login.this, "clcked", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(login.this, receiverhomepage.class);
-                startActivity(intent);
-            }
-        });
+      NeumorphButton login=findViewById(R.id.login_btn);
+      login.setOnClickListener(new View.OnClickListener() {
+          @Override
+          public void onClick(View view) {
+              Intent i= new Intent(login.this,donorhomepage.class);
+              startActivity(i);
+          }
+      });
 
 
         //sigup btn

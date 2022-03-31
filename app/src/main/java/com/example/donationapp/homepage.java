@@ -10,9 +10,11 @@ import android.util.Pair;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import soup.neumorphism.NeumorphFloatingActionButton;
+
 public class homepage extends AppCompatActivity {
 private TextView logotext;
-private ImageView logo;
+private NeumorphFloatingActionButton logo;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,7 @@ private ImageView logo;
         //assigning variables id
 
         logotext=(TextView)findViewById(R.id.logo_text);
-        logo=(ImageView) findViewById(R.id.logo);
+        logo= findViewById(R.id.logo);
 
         //adding splashscreen animation
 
@@ -38,6 +40,6 @@ private ImageView logo;
                 Pair.create(logotext, "logoText"));
                 startActivity(i,option.toBundle());
             }
-        },3000);
+        },1000);
     }
 }

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".notification"
+    android:background="@color/light_bg">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="Your notification appear here "
+        tools:layout_editor_absoluteX="113dp"
+        tools:layout_editor_absoluteY="299dp" />
+
+    // Bottom navigation bar
+
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+      app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingTop="2dp">
+
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/home_btn"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:src="@drawable/home_icon"
+            android:tint="#655D8A"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/lib_btn"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="1dp"
+            android:paddingEnd="1dp"
+            android:src="@drawable/loginuser_img"
+            android:tint="#F10086"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/history_btn"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/history_img"
+            android:tint="#086E7D"
+            app:neumorph_shapeType="flat" />
+
+
+    </RelativeLayout>
+
+    //bottom navigation bar ends here -----
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

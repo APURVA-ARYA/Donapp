@@ -4,16 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#F4FAFF"
+    android:background="@color/light_bg"
     tools:context=".homepage">
 
-    <ImageView
+    <soup.neumorphism.NeumorphFloatingActionButton
         android:id="@+id/logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
         android:src="@drawable/logo"
+        android:paddingTop="25dp"
+        app:neumorph_shapeType="flat"
+        android:paddingBottom="25dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerInParent="true"
         android:transitionName="logo" />
+
 
     <TextView
         android:id="@+id/logo_text"
@@ -22,7 +26,7 @@
         android:layout_below="@+id/logo"
         android:layout_centerInParent="true"
         android:fontFamily="sans-serif-light"
-        android:text="DONOR"
+        android:text="DONAPP"
         android:textColor="@color/text_color"
         android:textSize="50sp"
         android:transitionName="logoText" />

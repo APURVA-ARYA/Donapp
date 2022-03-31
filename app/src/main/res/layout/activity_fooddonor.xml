@@ -15,13 +15,12 @@
         android:layout_height="match_parent">
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-<!--            back button start-->
+            <!--            back button start-->
 
             <soup.neumorphism.NeumorphImageButton
                 android:id="@+id/donorfood_backbtn"
@@ -36,7 +35,7 @@
                 app:neumorph_shadowElevation="5dp"
                 app:neumorph_shapeType="basin" />
 
-       <!--back button ends -->
+            <!--back button ends -->
 
             <TextView
                 android:layout_width="match_parent"
@@ -305,7 +304,7 @@
 
 
             <soup.neumorphism.NeumorphButton
-                android:id="@+id/receiversignup1_nextbtn"
+                android:id="@+id/fooddonate_btn"
                 style="@style/Widget.Neumorph.Button"
                 android:layout_width="200dp"
                 android:layout_height="wrap_content"

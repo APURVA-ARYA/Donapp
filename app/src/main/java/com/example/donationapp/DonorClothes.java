@@ -10,7 +10,9 @@ import android.view.Window;
 import android.view.WindowManager;
 import android.widget.PopupMenu;
 import android.widget.RelativeLayout;
+import android.widget.Toast;
 
+import soup.neumorphism.NeumorphButton;
 import soup.neumorphism.NeumorphCardView;
 import soup.neumorphism.NeumorphImageButton;
 import soup.neumorphism.NeumorphTextView;
@@ -189,7 +191,17 @@ public class DonorClothes extends AppCompatActivity {
 
 
 
+        //  donate button
 
+        NeumorphButton donate= findViewById(R.id.clothdonate_btn);
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(DonorClothes.this, "Submit successful", Toast.LENGTH_SHORT).show();
+                Intent i= new Intent(DonorClothes.this,donorhomepage.class);
+                startActivity(i);
+            }
+        });
 
 
 

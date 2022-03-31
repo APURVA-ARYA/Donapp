@@ -29,7 +29,7 @@
                 android:background="@drawable/circle"
                 android:padding="3dp"
                 android:scaleType="centerInside"
-                android:src="@drawable/ic_user" />
+                android:src="@drawable/donersignup_name_img" />
 
         </RelativeLayout>
 
@@ -41,7 +41,7 @@
             android:layout_centerHorizontal="true"
             android:layout_marginTop="15sp"
             android:fontFamily="sans-serif-light"
-            android:text="Vikrant Singh"
+            android:text="APURVA ARYA"
             android:textColor="@color/white"
             android:textSize="32sp" />
 
@@ -59,7 +59,9 @@
             android:textSize="14sp" />
 
         <ImageView
+            android:id="@+id/prohome"
             android:layout_width="40dp"
+            android:clickable="true"
             android:layout_height="40dp"
             android:layout_alignParentRight="true"
             android:layout_marginTop="15dp"
@@ -67,8 +69,7 @@
             android:adjustViewBounds="true"
             android:scaleType="centerInside"
             android:src="@drawable/home_icon"
-            android:tint="@color/white"
-            />
+            app:tint="@color/light_bg" />
 
     </RelativeLayout>
 
@@ -86,8 +87,8 @@
             android:layout_weight="1"
             android:background="@color/followersBg"
             android:gravity="center"
-            android:paddingBottom="5dp"
-            android:paddingTop="5dp">
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -99,7 +100,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="60"
+                    android:text="2"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
 
@@ -107,7 +108,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Donations"
+                    android:text="Donations Accepted"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
@@ -136,7 +137,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="15"
+                    android:text="0"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
 
@@ -144,7 +145,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="Donations received"
+                    android:text="Donations rejected"
                     android:textAllCaps="true"
                     android:textColor="@color/white"
                     android:textSize="13sp" />
@@ -186,7 +187,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="sans-serif-light"
-                    android:text="vikrantsingh0016@gmail.com"
+                    android:text="apurvaarya@gmail.com"
                     android:textColor="#000000"
                     android:textSize="18sp" />
 

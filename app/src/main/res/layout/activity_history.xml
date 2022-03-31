@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".history"
+    android:background="@color/light_bg"
+    >
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/donation1"
+        android:layout_marginTop="40dp"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="YOUR DONATION "/>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/donation1"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.189">
+<LinearLayout
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Donation type: food"
+        android:textColor="@color/text_color"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-263dp" />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:gravity="center"
+        android:text="Donation DATE: 31-03-2022"
+        android:textColor="@color/text_color"
+         />
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Donated to : Orphanage"
+        android:textColor="@color/text_color"
+        />
+
+</LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+    <soup.neumorphism.NeumorphCardView
+        android:id="@+id/donation2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.542">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="Donation type: clothes"
+                android:textColor="@color/text_color"
+                tools:layout_editor_absoluteX="0dp"
+                tools:layout_editor_absoluteY="-263dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Donation DATE: 31-03-2022"
+                android:textColor="@color/text_color" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:text="Donated to : NGO"
+                android:textColor="@color/text_color" />
+
+        </LinearLayout>
+
+    </soup.neumorphism.NeumorphCardView>
+
+// bottom navigation menu
+
+    <RelativeLayout
+      app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:paddingTop="2dp">
+
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/home_btn"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="25dp"
+            android:paddingStart="35dp"
+            android:paddingEnd="35dp"
+            android:src="@drawable/home_icon"
+            android:tint="#655D8A"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/lib_btn"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerHorizontal="true"
+            android:paddingStart="1dp"
+            android:paddingEnd="1dp"
+            android:src="@drawable/loginuser_img"
+            android:tint="#F10086"
+            app:neumorph_shapeType="flat" />
+
+        <soup.neumorphism.NeumorphImageButton
+            android:id="@+id/history_btn"
+            style="@style/Widget.Neumorph.ImageButton"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="25dp"
+            android:src="@drawable/history_img"
+            android:tint="#086E7D"
+            app:neumorph_shapeType="basin" />
+
+
+    </RelativeLayout>
+
+    //bottom navigation bar ends here -----
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

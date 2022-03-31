@@ -349,9 +349,21 @@
 
 
             </soup.neumorphism.NeumorphCardView>
-
+            <soup.neumorphism.NeumorphButton
+                android:id="@+id/clothdonate_btn"
+                style="@style/Widget.Neumorph.Button"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:clickable="true"
+                android:text="DONATE"
+                android:textColor="#ecf0f3"
+                app:neumorph_backgroundColor="#B497EF" />
 
         </LinearLayout>
+
+
+
 
     </ScrollView>
 </RelativeLayout>

@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".donorhomepage"
-    android:background="@color/light_bg">
+    android:background="@color/light_bg"
+    tools:ignore="ExtraText">
 
     <soup.neumorphism.NeumorphFloatingActionButton
         android:id="@+id/donor_profile"
@@ -35,36 +36,97 @@
 
     <soup.neumorphism.NeumorphCardView
         android:id="@+id/imgslider"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="250dp"
         android:layout_below="@+id/donor_profile"
         app:neumorph_shapeType="pressed">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/donorhome"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"/>
+
+
 
 
     </soup.neumorphism.NeumorphCardView>
 
-    <com.smarteist.autoimageslider.SliderView
+<!--    <com.smarteist.autoimageslider.SliderView-->
+<!--        android:id="@+id/donorhomepage_slider"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@+id/imgslider"-->
+<!--        app:sliderAnimationDuration="600"-->
+<!--        app:sliderAutoCycleDirection="back_and_forth"-->
+<!--        app:sliderAutoCycleEnabled="true"-->
+<!--        app:sliderIndicatorAnimationDuration="600"-->
+<!--        app:sliderIndicatorGravity="center_horizontal"-->
+<!--        app:sliderIndicatorMargin="15dp"-->
+<!--        app:sliderIndicatorOrientation="horizontal"-->
+<!--        app:sliderIndicatorPadding="3dp"-->
+<!--        app:sliderIndicatorRadius="2dp"-->
+<!--        app:sliderIndicatorSelectedColor="@color/black"-->
+<!--        app:sliderIndicatorUnselectedColor="@color/purple_200"-->
+<!--        app:sliderScrollTimeInSec="2"-->
+<!--        app:sliderStartAutoCycle="true"-->
+
+<!--        >-->
+
+<!--    </com.smarteist.autoimageslider.SliderView>-->
+
+
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/category"
+        android:layout_marginTop="-31dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="25dp"
+        android:text="What do you want to donate !!" />
+
+    <LinearLayout
+        android:id="@+id/category"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_below="@+id/imgslider"
-        android:id="@+id/donorhomepage_slider"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        app:sliderAnimationDuration="600"
-        app:sliderAutoCycleDirection="back_and_forth"
-        app:sliderAutoCycleEnabled="true"
-        app:sliderIndicatorAnimationDuration="600"
-        app:sliderIndicatorGravity="center_horizontal"
-        app:sliderIndicatorMargin="15dp"
-        app:sliderIndicatorOrientation="horizontal"
-        app:sliderIndicatorPadding="3dp"
-        app:sliderIndicatorRadius="2dp"
-        app:sliderIndicatorSelectedColor="@color/black"
-        app:sliderIndicatorUnselectedColor="@color/purple_200"
-        app:sliderScrollTimeInSec="2"
-        app:sliderStartAutoCycle="true"
+        android:layout_marginTop="65dp">
 
-        >
 
-    </com.smarteist.autoimageslider.SliderView>
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/donorfood_btn"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="10dp"
+            android:clickable="true"
+            android:text="FOOD"
+            android:textColor="#ecf0f3"
+            app:neumorph_backgroundColor="#d291bc" />
+
+        <soup.neumorphism.NeumorphButton
+            android:id="@+id/donorcloth_btn"
+            style="@style/Widget.Neumorph.Button"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:clickable="true"
+            android:text="CLOTH"
+            android:textColor="#ecf0f3"
+            app:neumorph_backgroundColor="#957DAD" />
+
+
+    </LinearLayout>
+
+
+
 
     //Bottom navigation bar
 
@@ -102,7 +164,7 @@
             app:neumorph_shapeType="flat" />
 
         <soup.neumorphism.NeumorphImageButton
-            android:id="@+id/notification_btn"
+            android:id="@+id/history_btn"
             style="@style/Widget.Neumorph.ImageButton"
             android:layout_width="85dp"
             android:layout_height="85dp"

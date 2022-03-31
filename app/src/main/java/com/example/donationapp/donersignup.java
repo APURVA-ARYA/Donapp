@@ -8,10 +8,12 @@ import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 
+import soup.neumorphism.NeumorphButton;
 import soup.neumorphism.NeumorphImageButton;
 
 public class donersignup extends AppCompatActivity {
     NeumorphImageButton backbtn;
+    NeumorphButton signupbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,6 +39,14 @@ public class donersignup extends AppCompatActivity {
         //back btn functn ENDS
 
 // submit button
+        signupbtn=findViewById(R.id.donorsignup_btn);
+        signupbtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i=new Intent(donersignup.this,login.class);
+                startActivity(i);
+            }
+        });
 
     }
 }

@@ -16,6 +16,7 @@ import android.net.Uri;
 import android.widget.Button;
 import android.widget.ImageView;
 
+import soup.neumorphism.NeumorphButton;
 import soup.neumorphism.NeumorphImageButton;
 
 public class fooddonor extends AppCompatActivity {
@@ -59,6 +60,7 @@ public class fooddonor extends AppCompatActivity {
         //back btn functn ENDS
 
 
+
 //drop down menu
         autoCompleteText = findViewById(R.id.wheretodonate_autocompletetxt);
         adapterItem = new ArrayAdapter<String>(this,R.layout.registersignup1_orgcategorylist,donate);
@@ -71,6 +73,20 @@ public class fooddonor extends AppCompatActivity {
                 Toast.makeText(getApplicationContext(),"You Selected: "+item,Toast.LENGTH_SHORT).show();
             }
         });
+
+
+        // food donate button
+
+        NeumorphButton donate= findViewById(R.id.fooddonate_btn);
+        donate.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(fooddonor.this, "Submit successful", Toast.LENGTH_SHORT).show();
+                Intent i= new Intent(fooddonor.this,donorhomepage.class);
+                startActivity(i);
+            }
+        });
+
 
 //        image upload function starts
 

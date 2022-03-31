@@ -11,6 +11,7 @@ import com.google.android.material.tabs.TabLayout;
 
 public class receiverhomepage extends AppCompatActivity {
 
+
     TabLayout tablayout;
     TabItem tabitem1, tabitem2;
     ViewPager viewpager;
@@ -33,7 +34,7 @@ public class receiverhomepage extends AppCompatActivity {
         pageradapter=new pageadapter(getSupportFragmentManager(), tablayout.getTabCount());
         viewpager.setAdapter(pageradapter);
 
-        tablayout.setOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
+        tablayout.addOnTabSelectedListener(new TabLayout.OnTabSelectedListener() {
             @Override
             public void onTabSelected(TabLayout.Tab tab) {
                 viewpager.setCurrentItem(tab.getPosition());
@@ -52,6 +53,7 @@ public class receiverhomepage extends AppCompatActivity {
 
             }
         });
+
         viewpager.addOnPageChangeListener(new TabLayout.TabLayoutOnPageChangeListener(tablayout));
 
     }
